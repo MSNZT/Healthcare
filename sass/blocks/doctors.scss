@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.icon::before {
+.icon-arrow::before {
   content: "";
   position: absolute;
   top: 65px;
@@ -115,4 +115,8 @@
   text-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
   background-color: $primary;
   border-radius: 5px;
+
+  &:hover {
+    box-shadow: 0 3px 11px 0 #1863a4;
+  }
 }
