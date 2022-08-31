@@ -1,0 +1,34 @@
+.header {
+  background-image: linear-gradient(rgba(238, 250, 255, 0.3), rgba(238, 250, 255, 0.3)), url("..//img/bg.png");
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("..//img/blur-header.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 879px;
+    z-index: -1;
+  }
+}
+
+.header__container {
+  padding-top: 15px;
+}
+
+.header__top {
+  display: flex;
+  height: 56px;
+  align-items: center;
+}
+
+.header__body {
+  padding-top: 157px;
+}
+

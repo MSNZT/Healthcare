@@ -1,0 +1,148 @@
+.header__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header__column-left {
+  padding-top: 110px;
+}
+
+.header__title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 70px;
+  color: #3E3E3E;
+  margin-bottom: 31px;
+
+  span {
+    color: $primary;
+  }
+}
+
+.header__decr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: rgba(117, 117, 117, 0.46);
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+// Form
+
+.form-search {
+  border: none;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 13px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 22px rgba(228, 245, 252, 0.3);
+  border-radius: 8px;
+  height: 86px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="search"] {
+  background: rgba(245, 246, 250, 0.52);
+  border: 1px solid #ffffff;
+  outline: none;
+  border-radius: 8px;
+  padding: 17px 30px;
+  margin-right: 19px;
+  max-width: 216px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:focus {
+    box-shadow: 0 0 3px 0 #000;
+  }
+}
+
+.dropdown {
+  position: relative;
+  margin-right: auto;
+}
+
+.dropdown select {
+  max-width: 203px;
+  padding: 17px 50px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  background: rgba(245, 246, 250, 0.52);
+}
+
+label:before {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  content: "";
+  background-image: url("..//img/mark.svg");
+  display: inline-block;
+  color: #000;
+  pointer-events: none;
+}
+
+.search-btn {
+  width: 70px;
+  height: 59px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background: #40A3F8;
+  background-image: url("..//img/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 3px 11px 0 #1863a4;
+  }
+}
+
+// Background
+
+.bg {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("..//img/bg-circle.png");
+    background-repeat: no-repeat;
+    width: 587px;
+    height: 587px;
+    z-index: -1;
+    right: -57px;
+    top: -22px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("..//img/bg-icon.svg");
+    background-repeat: no-repeat;
+    width: 658px;
+    height: 561px;
+    z-index: 1;
+    left: -11px;
+    top: 15px;
+  }
+}
+
+.female-bg {
+  display: block;
+  width: 554px;
+  height: 651px;
+}
