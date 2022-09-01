@@ -26,6 +26,19 @@
   background-image: linear-gradient(132.1deg, rgba(255, 255, 255, 0.88) 0.65%, #fafafa 103.13%);
   box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+  position: relative;
+
+  &::before {
+    content: "";
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 45px;
+    width: 40px;
+    height: 40px;
+    background-image: url(..//img/quote.svg);
+    background-repeat: no-repeat;
+  }
 
   img {
     display: block;
@@ -44,6 +57,17 @@
   color: #3d3d3f;
   margin: 0;
   margin-bottom: 6px;
+  position: relative;
+}
+
+.stars {
+  position: absolute;
+  right: 21px;
+  background-image: url(..//img/stars.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 83px;
+  height: 22px;
 }
 
 .client__location {
