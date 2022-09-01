@@ -3,19 +3,15 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.header__column-left {
-  padding-top: 110px;
-}
-
 .header__title {
   margin: 0;
   padding: 0;
-
   font-weight: 700;
   font-size: 48px;
   line-height: 70px;
   color: #3E3E3E;
   margin-bottom: 31px;
+  max-width: 482px;
 
   span {
     color: $primary;
@@ -138,10 +134,15 @@ label:before {
     left: -11px;
     top: 15px;
   }
+
+  @media (max-width: 900px) {
+    display: none;
+  }
 }
 
 .female-bg {
   display: block;
   width: 554px;
   height: 651px;
+  object-fit: cover;
 }
